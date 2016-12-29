@@ -46,6 +46,6 @@ class SendPush
         ));
         $response = curl_exec($c);
         $response = json_decode($response);
-        return $response->status;
+        return $response->success;
     }
 }
