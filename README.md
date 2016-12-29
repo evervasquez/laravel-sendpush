@@ -95,4 +95,4 @@ Copyright (c) 2015 [SendPush][1] Licensed under the [MIT license][2].
 
 
   [1]: http://notify.mobytesac.com/
-  [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
+  [2]: https://github.com/evervasquez/laravel-sendpush/blob/master/LICENSE
