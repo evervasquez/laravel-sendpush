@@ -16,10 +16,21 @@ A Laravel 5 package for Android and soon in iOS push notification service from h
 
 #### Installation
 
-```bash
+Add to require in composer.json
+```json
 composer require mobytes/laravel-sendpush
+{   
+     ...
+    "require": {
+        ...
+        "mobytes/laravel-sendpush": "~1.2"
+    }
+}
 ```
 
+```bash
+composer update
+```
 
 Once mobytes/laravel-sendpush is installed, you need to register the Service Provider. To do that open `app/config/app.php` and add the following to the `providers` key.
 
