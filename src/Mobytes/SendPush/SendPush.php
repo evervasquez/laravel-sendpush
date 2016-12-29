@@ -14,8 +14,8 @@ class SendPush
     {
         // Fetch the config data and set up the required url´s
         $this->config = $config;
-        $this->token_user = $this->config->get('SendPush.token_user');
-        $this->token_app = $this->config->get('SendPush.token_app');
+        $this->token_user = $this->config->get('sendpush.token_user');
+        $this->token_app = $this->config->get('sendpush.token_app');
     }
 
     public function config($token_user, $token_app)
