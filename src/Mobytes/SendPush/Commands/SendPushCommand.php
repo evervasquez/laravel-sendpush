@@ -2,7 +2,6 @@
 
 namespace Mobytes\SendPush\Commands;
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Mobytes\SendPush\SendPush;
 
@@ -21,7 +20,7 @@ class SendPushCommand extends Command
      */
     protected $description = 'SendPush Command';
 
-    private $push;
+    protected $push;
 
     /**
      * Create a new command instance.
@@ -29,7 +28,7 @@ class SendPushCommand extends Command
      */
     public function __construct(SendPush $push)
     {
-        parent::__construct($push);
+        parent::__construct();
         $this->push = $push;
     }
 
@@ -38,25 +37,13 @@ class SendPushCommand extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $title      = $this->argument('title');
         $msg        = $this->argument('msg');
-//        $debug      = $this->option('debug');
-
-        // Check if Debug mode is turned on
-//        if ($debug) {
-//            $this->push->debug(true);
-//        }
 
         $this->push->push($title, $msg);
-//        if ($debug) {
-//            $this->info($this->push->send());
-//        } else if ($this->push->send()) {
-//            $this->info("Your message has been sent.");
-//        } else {
-//            $this->error('Something went wrong!');
-//        }
+
         return $this->push->send();
     }
 

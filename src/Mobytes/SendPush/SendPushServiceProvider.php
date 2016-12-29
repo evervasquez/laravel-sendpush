@@ -4,6 +4,7 @@ namespace Mobytes\SendPush;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
+use Mobytes\SendPush\Commands\SendPushCommand;
 
 class SendPushServiceProvider extends ServiceProvider
 {
@@ -35,13 +36,13 @@ class SendPushServiceProvider extends ServiceProvider
             $loader->alias('sendpush', 'Mobytes\SendPush\SendPush');
         });
 
-        $this->app['pushover.send'] = $this->app->share(function ()
+        $this->app['sendpush.send'] = $this->app->share(function ()
         {
-            return new Commands\SendPushCommand($this->app['sendpush']);
+            return new SendPushCommand($this->app['sendpush']);
         });
 
         $this->commands(
-            'sendpush.send'
+            SendPushCommand::class
         );
     }
 
