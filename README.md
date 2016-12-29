@@ -83,7 +83,7 @@ and you'll find
 
 To send a pushover message you'll be able to use it like this way ( **Title and Message are Required** )
 
-    php artisan sendpush:send YourTitle YourMessage
+    php artisan sendpush:send "YourTitle" "YourMessage"
 to turn on the debug mode just add
 
 ----------
