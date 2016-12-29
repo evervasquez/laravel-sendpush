@@ -1,6 +1,6 @@
 # Laravel 5 SendPush Package
 ======
-A Laravel 5 package for Android and iOS push notification service from http://notify.mobytesac.com.
+A Laravel 5 package for Android and soon in iOS push notification service from http://notify.mobytesac.com.
 
 **Please if you found any bug or you have any enhancement, You're so welcomed to open an Issue or make a pull request.
 
@@ -66,7 +66,6 @@ To Send the Message (**Required**)
 ```php
 SendPush::send();
 ```
-All other information will be found in details here https://notify.mobytesac.com/api
 
 
 ----------
@@ -92,8 +91,8 @@ to turn on the debug mode just add
 
 #### License
 
-Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+Copyright (c) 2015 [SendPush][1] Licensed under the [MIT license][2].
 
 
-  [1]: https://dyaa.me/
-  [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
+  [1]: http://notify.mobytesac.com/
+  [2]: https://github.com/evervasquez/laravel-sendpush/blob/master/LICENSE
