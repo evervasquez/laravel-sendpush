@@ -91,7 +91,7 @@ to turn on the debug mode just add
 
 #### License
 
-Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+Copyright (c) 2015 [SendPush][1] Licensed under the [MIT license][2].
 
 
   [1]: http://notify.mobytesac.com/
