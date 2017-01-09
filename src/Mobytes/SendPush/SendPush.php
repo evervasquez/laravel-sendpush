@@ -6,7 +6,7 @@ use Illuminate\Config\Repository;
 
 class SendPush
 {
-    const API_URL = 'http://notify.mobytesac.com/api/v1/send_message/';
+    const API_URL = 'https://pushiner/api/v1/send_message/';
     private $title;
     private $msg;
 
